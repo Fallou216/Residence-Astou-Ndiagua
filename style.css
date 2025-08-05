@@ -24,6 +24,7 @@ body {
 /* Texte doré */
 .text-gold {
   color: #ffcc66;
+  text-shadow: 1px 1px 6px #000, 0 0 2px #333;
 }
 
 /* Logo plus grand et centré */
