@@ -1,28 +1,75 @@
+/* ----- Arrière-plan animé noir/or ----- */
 body {
-  background-color: #0d1b4c;
   font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(-45deg, #000000, #ffcc66, #000000, #ffcc66);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: white;
+  margin: 0;
 }
 
+/* Animation du fond */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Texte doré */
+.text-gold {
+  color: #ffcc66;
+}
+
+/* Logo plus grand et centré */
+.logo-img {
+  max-width: 320px;
+  width: 500%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Cartes avec icônes */
 .icon-card {
-  background-color: #142c63;
+  background-color: #1f1f1f;
+  border: 2px solid #ffcc66;
   border-radius: 10px;
   padding: 30px 15px;
-  color: #fff;
+  color: #ffcc66;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
 }
 
 .icon-card:hover {
-  background-color: #1e42a2;
+  background-color: #ffcc66;
+  color: #1f1f1f;
   transform: translateY(-5px);
 }
 
 .icon-card i {
-  color: #ffffff;
+  color: inherit;
 }
 
 .icon-card p {
   margin-top: 10px;
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 600;
+}
+
+/* Footer personnalisé */
+.footer-dark {
+  background-color: #000000;
+  color: #ffcc66;
+}
+
+.footer-dark p {
+  margin-bottom: 0.3rem;
 }
