@@ -1,0 +1,28 @@
+body {
+  background-color: #0d1b4c;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.icon-card {
+  background-color: #142c63;
+  border-radius: 10px;
+  padding: 30px 15px;
+  color: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.icon-card:hover {
+  background-color: #1e42a2;
+  transform: translateY(-5px);
+}
+
+.icon-card i {
+  color: #ffffff;
+}
+
+.icon-card p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
