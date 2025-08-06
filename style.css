@@ -30,7 +30,7 @@ body {
 /* Logo plus grand et centré */
 .logo-img {
   max-width: 320px;
-  width: 500%;
+  width: 100%;
   height: auto;
   border-radius: 10px;
   display: block;
@@ -73,4 +73,85 @@ body {
 
 .footer-dark p {
   margin-bottom: 0.3rem;
+}
+
+/* Sidebar liens encadrés et espacés */
+.sidebar .nav {
+  margin-top: 40px;
+}
+.sidebar .nav-link {
+  color: #ffcc66 !important;
+  margin: 14px 0;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 10px 20px;
+  background: #181818;
+  border: 2px solid #ffcc66;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  text-align: left;
+}
+.sidebar .nav-link:hover {
+  background: #ffcc66;
+  color: #000 !important;
+}
+
+/* Bouton WhatsApp dans la sidebar */
+.sidebar .btn-success {
+  width: 80%;
+  margin: 20px auto 0 auto;
+  display: block;
+}
+
+/* Sidebar responsive */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+    padding-top: 10px;
+  }
+}
+
+/* Menu hamburger bouton */
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1100;
+  background: #000;
+  border: none;
+  color: #ffcc66;
+  font-size: 2rem;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .menu-btn {
+    left: 10px;
+    top: 10px;
+    font-size: 1.7rem;
+  }
+}
+
+/* Sidebar animation et affichage */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 230px;
+  background: #000;
+  padding-top: 30px;
+  z-index: 2000;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.2);
+  transform: translateX(-100%);
+  transition: transform 0.3s;
+}
+.sidebar.active {
+  transform: translateX(0);
 }
