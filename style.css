@@ -217,3 +217,192 @@ body {
         font-size: 1.7rem;
       }
     }
+    /* ----- Styles pour la page votre_sejour.html ----- */
+
+/* Titres de section */
+main h3 {
+  color: #ffcc66;
+  font-size: 1.6rem;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 4px #000;
+}
+
+/* Listes d'informations */
+main ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+
+main ul li {
+  background-color: #1f1f1f;
+  border-left: 4px solid #ffcc66;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  color: white;
+}
+
+/* Texte en gras dans les listes */
+main ul li strong {
+  color: #ffcc66;
+}
+
+/* Section finale "Merci" */
+section:last-of-type {
+  background-color: #000;
+  padding: 20px;
+  border-top: 2px solid #ffcc66;
+  text-align: center;
+  font-style: italic;
+  color: #ffcc66;
+}
+
+/* ---------------------
+   Styles généraux
+---------------------- */
+/*body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background: #f8f4f0;
+  color: #333;
+  line-height: 1.6;
+}*/
+
+/* ---------------------
+   Header (bandeau accueil)
+---------------------- */
+header {
+  background: url("images/immeuble.jpg") center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45); /* voile sombre */
+}
+
+header h1, header h2, header p {
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+header h2 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* ---------------------
+   Blocs séjour
+---------------------- */
+.sejour-bloc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+
+.sejour-bloc.reverse {
+  flex-direction: row-reverse;
+}
+
+.sejour-texte {
+  flex: 1;
+}
+
+.sejour-texte h3 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #b0722a; /* couleur dorée/marron */
+}
+
+.sejour-texte ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sejour-texte ul li {
+  margin-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.sejour-texte ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #b0722a;
+}
+
+.sejour-img {
+  flex: 1;
+  text-align: center;
+}
+
+.sejour-img img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* ---------------------
+   Merci (section finale)
+---------------------- */
+.sejour-bloc:last-of-type {
+  background: linear-gradient(135deg, #f7efe6, #fff);
+  text-align: center;
+}
+
+.sejour-bloc:last-of-type h3 {
+  font-size: 1.8rem;
+}
+
+/* ---------------------
+   Footer
+---------------------- */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #b0722a;
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+/* ---------------------
+   Responsive
+---------------------- */
+@media (max-width: 900px) {
+  .sejour-bloc {
+    flex-direction: column;
+    text-align: center;
+  }
+  .sejour-bloc.reverse {
+    flex-direction: column;
+  }
+}
