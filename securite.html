@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sécurité - Résidence Astou & Ndiaga</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header avec menu -->
+  <header>
+    <div class="logo">Résidence Astou & Ndiaga</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="securite.html" class="active">Sécurité</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </header>
+
+  <!-- Section principale -->
+  <main class="container">
+    <section class="intro">
+      <h1>Sécurité & Sérénité</h1>
+      <p>À la <strong>Résidence Astou & Ndiaga</strong>, votre tranquillité est notre priorité.  
+      Nous mettons en place des dispositifs modernes et efficaces afin de garantir la sécurité de nos locataires et de leurs biens.</p>
+    </section>
+
+    <section class="security-section">
+      <h2>Nos engagements en matière de sécurité</h2>
+      <ul>
+        <li>🔒 <strong>Accès sécurisé :</strong> Entrées équipées de digicode et badges magnétiques.</li>
+        <li>📹 <strong>Vidéo-surveillance :</strong> Caméras installées dans les espaces communs et parkings.</li>
+        <li>👮 <strong>Gardiennage :</strong> Présence d’agents de sécurité 24h/24.</li>
+        <li>🚨 <strong>Systèmes d’alarme :</strong> Détecteurs incendie et alarmes reliées à une centrale.</li>
+        <li>🛡️ <strong>Assurance habitation :</strong> Partenariat avec des assureurs fiables.</li>
+      </ul>
+    </section>
+
+    <section class="tips">
+      <h2>Conseils de sécurité pour nos résidents</h2>
+      <p>En plus de nos dispositifs, voici quelques recommandations simples :</p>
+      <ol>
+        <li>Ne laissez pas vos clés sous le paillasson .</li>
+        <li>Vérifiez toujours que la porte est bien fermée en sortant.</li>
+        <li>Ne laissez pas des inconnus entrer dans vos locaux.</li>
+        <li>En cas d’anomalie, contactez immédiatement notre équipe de sécurité.</li>
+      </ol>
+    </section>
+
+    <section class="contact-cta">
+      <h2>Un souci ou une question ?</h2>
+      <p>Notre équipe est disponible 24h/24 pour répondre à vos préoccupations en matière de sécurité.</p>
+      <a href="contact.html" class="btn">Nous contacter</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Résidence Astou & Ndiaga - Tous droits réservés</p>
+  </footer>
+
+  <!-- JS inclus -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

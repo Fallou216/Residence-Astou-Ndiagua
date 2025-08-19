@@ -406,3 +406,34 @@ footer {
     flex-direction: column;
   }
 }
+
+.services-cards {
+  display: flex;
+  gap: 20px;            /* espace entre les cartes */
+  justify-content: center;
+  flex-wrap: wrap;      /* permet de passer à la ligne si écran petit */
+  margin-top: 20px;
+}
+
+.service-card {
+  width: 180px;         /* taille fixe des cartes */
+  text-align: center;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.service-card img {
+  width: 100%;          /* l’image prend toute la largeur du cadre */
+  height: 120px;        /* taille contrôlée */
+  object-fit: cover;    /* recadre l’image si besoin */
+  border-radius: 8px;
+}
+
+.service-card p {
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 14px;
+}
