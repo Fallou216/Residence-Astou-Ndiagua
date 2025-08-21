@@ -325,6 +325,7 @@ header p {
   background: white;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
 
 
 .sejour-bloc.reverse {
@@ -436,4 +437,75 @@ footer {
   margin-top: 8px;
   font-weight: 500;
   font-size: 14px;
+}
+/* Affichage grille pour les appartements */
+.appartement-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  align-items: start;
+  margin-bottom: 50px;
+}
+
+.appartement-main img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  margin-bottom: 15px;
+}
+
+.appartement-main .info {
+  text-align: center;
+}
+
+/* ...existing code... */
+.appartement-thumbs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
+  height: 100%; /* Prend toute la hauteur disponible */
+}
+
+.appartement-thumbs img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1; /* Toujours carré */
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  transition: transform 0.2s;
+  background: #fff;
+  display: block;
+}
+
+.appartement-thumbs img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+}
+
+@media (max-width: 900px) {
+  .appartement-grid {
+    grid-template-columns: 1fr;
+  }
+  .appartement-thumbs {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 8px;
+    height: auto;
+  }
+  .appartement-thumbs img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+  }
+}
+
+body {
+  background: linear-gradient(-45deg, #000000, #ffcc66, #000000, #ffcc66);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: white;
+  margin: 0;
 }
