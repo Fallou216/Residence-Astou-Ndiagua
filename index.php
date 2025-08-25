@@ -6,7 +6,7 @@
   <title>Résidence Astou & Ndiaga</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/style.css" />
  
 </head>
 <body class="bg-dark text-white">
@@ -24,34 +24,7 @@
   </button>
 
   <!-- Sidebar navigation -->
-  <nav class="sidebar" id="sidebar">
-    <ul class="nav flex-column">
-      <li class="nav-item">
-        <a class="nav-link" href="bienvenue.html"><i class="fas fa-door-open me-2"></i>Bienvenue</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="menus.html"><i class="fas fa-book-open me-2"></i>Menus</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="installations.html"><i class="fas fa-building me-2"></i>Installations</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="services.html"><i class="fas fa-concierge-bell me-2"></i>Services</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="avantages.html"><i class="fas fa-gift me-2"></i>Avantages</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="entretien.html"><i class="fas fa-broom me-2"></i>Entretien</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="securite.html"><i class="fas fa-shield-alt me-2"></i>Sécurité</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="sejour.html"><i class="fas fa-calendar-week me-2"></i>Séjour</a>
-      </li>
-    </ul>
-  </nav>
+ <?php include("includes/header.php"); ?>
 
   <!-- Contenu principal -->
   <div class="main-content">
@@ -86,7 +59,7 @@
     <section class="container pb-5">
       <div class="row g-4 justify-content-center">
         <div class="col-6 col-md-4 col-lg-3">
-          <a href="bienvenue.html" class="card-box text-decoration-none">
+          <a href="bienvenue.php" class="card-box text-decoration-none">
             <div class="icon-card text-center">
               <i class="fas fa-door-open fa-2x mb-2"></i>
               <p>Bienvenue</p>
@@ -94,7 +67,7 @@
           </a>
         </div>
         <div class="col-6 col-md-4 col-lg-3">
-          <a href="menus.html" class="card-box text-decoration-none">
+          <a href="menus.php" class="card-box text-decoration-none">
             <div class="icon-card text-center">
               <i class="fas fa-book-open fa-2x mb-2"></i>
               <p>Menus</p>
@@ -102,7 +75,7 @@
           </a>
         </div>
         <div class="col-6 col-md-4 col-lg-3">
-          <a href="installations.html" class="card-box text-decoration-none">
+          <a href="installations.php" class="card-box text-decoration-none">
             <div class="icon-card text-center">
               <i class="fas fa-building fa-2x mb-2"></i>
               <p>Nos installations</p>
@@ -110,7 +83,7 @@
           </a>
         </div>
         <div class="col-6 col-md-4 col-lg-3">
-          <a href="services.html" class="card-box text-decoration-none">
+          <a href="services.php" class="card-box text-decoration-none">
             <div class="icon-card text-center">
               <i class="fas fa-concierge-bell fa-2x mb-2"></i>
               <p>Services aux résidents</p>
@@ -118,7 +91,7 @@
           </a>
         </div>
         <div class="col-6 col-md-4 col-lg-3">
-          <a href="avantages.html" class="card-box text-decoration-none">
+          <a href="avantages.php" class="card-box text-decoration-none">
             <div class="icon-card text-center">
               <i class="fas fa-gift fa-2x mb-2"></i>
               <p>Avantages</p>
@@ -126,7 +99,7 @@
           </a>
         </div>
         <div class="col-6 col-md-4 col-lg-3">
-          <a href="entretien.html" class="card-box text-decoration-none">
+          <a href="entretien.php" class="card-box text-decoration-none">
             <div class="icon-card text-center">
               <i class="fas fa-broom fa-2x mb-2"></i>
               <p>Entretien</p>
@@ -134,7 +107,7 @@
           </a>
         </div>
         <div class="col-6 col-md-4 col-lg-3">
-          <a href="securite.html" class="card-box text-decoration-none">
+          <a href="securite.php" class="card-box text-decoration-none">
             <div class="icon-card text-center">
               <i class="fas fa-shield-alt fa-2x mb-2"></i>
               <p>Sécurité</p>
@@ -142,7 +115,7 @@
           </a>
         </div>
         <div class="col-6 col-md-4 col-lg-3">
-          <a href="sejour.html" class="card-box text-decoration-none">
+          <a href="sejour.php" class="card-box text-decoration-none">
             <div class="icon-card text-center">
               <i class="fas fa-calendar-week fa-2x mb-2"></i>
               <p>Pendant votre séjour</p>
@@ -152,15 +125,6 @@
       </div>
     </section>
     <!-- ===== Footer ===== -->
-    <footer class="footer-dark text-center py-4 mt-5">
-      <div class="container">
-        <p class="mb-1 text-gold">&copy; 2025 Résidence Astou & Ndiaga. Tous droits réservés.</p>
-        <p class="text-gold mb-0">Adresse : Route des Almadies, Dakar, Sénégal</p>
-        <p class="text-gold">Téléphone : +221 77 000 00 00 | Email : contact@residence-astou-ndiaga.sn</p>
-      </div>
-    </footer>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+    <?php include("includes/footer.php"); ?>
 </body>
 </html>

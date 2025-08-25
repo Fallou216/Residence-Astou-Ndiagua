@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Entretien - Résidence Astou & Ndiaga</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <h1>Entretien et Propreté</h1>
-    <p>Un cadre toujours propre et soigné pour votre confort.</p>
-  </header>
+  <!-- Header -->
+  <?php include("includes/header.php"); ?>
 
   <main>
+    <h1>Entretien et Propreté</h1>
+    <p>Un cadre toujours propre et soigné pour votre confort.</p>
+
     <section>
       <h2>Ménage quotidien</h2>
       <p>Nos chambres sont nettoyées chaque jour pour garantir hygiène et confort.</p>
@@ -28,5 +29,6 @@
       <p>Un service de lavage et repassage de vos vêtements est disponible.</p>
     </section>
   </main>
-</body>
-</html>
+
+  <!-- Footer -->
+  <?php include("includes/footer.php"); ?>

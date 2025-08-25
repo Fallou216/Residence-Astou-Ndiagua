@@ -6,16 +6,11 @@
   <title>Bienvenue - Résidence Astou & Ndiaga</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="style.css" />
-  
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <!-- Barre de navigation en haut -->
-  <nav class="navbar navbar-dark" style="background: #000;">
-    <div class="container-fluid justify-content-center">
-      <span class="navbar-brand mb-0 h1 text-gold fw-bold">Résidence Astou & Ndiaga</span>
-    </div>
-  </nav>
+  <!-- Header -->
+  <?php include("includes/header.php"); ?>
 
   <!-- Bouton hamburger -->
   <button class="menu-btn" id="menuBtn">
@@ -23,35 +18,7 @@
   </button>
 
   <!-- Sidebar navigation -->
-  <nav class="sidebar" id="sidebar">
-    <ul class="nav flex-column">
-      <li class="nav-item">
-        <a class="nav-link" href="bienvenue.html"><i class="fas fa-door-open me-2"></i>Bienvenue</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="menus.html"><i class="fas fa-book-open me-2"></i>Menus</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="installations.html"><i class="fas fa-building me-2"></i>Installations</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="services.html"><i class="fas fa-concierge-bell me-2"></i>Services</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="avantages.html"><i class="fas fa-gift me-2"></i>Avantages</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="entretien.html"><i class="fas fa-broom me-2"></i>Entretien</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="securite.html"><i class="fas fa-shield-alt me-2"></i>Sécurité</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="sejour.html"><i class="fas fa-calendar-week me-2"></i>Séjour</a>
-      </li>
-    </ul>
-  </nav>
-
+  <?php include("includes/header.php"); ?>
 
   <!-- Bienvenue Section -->
   <main class="main-content container py-5">
@@ -63,7 +30,6 @@
         <p class="fs-5">
           Découvrez un cadre chaleureux et moderne, idéal pour vos séjours à Dakar. Notre résidence vous offre des chambres confortables, des services personnalisés et une équipe à votre écoute pour rendre votre expérience inoubliable.
         </p>
-        <!-- Image de l'immeuble en illustration -->
         <img src="images/immeuble.jpg" alt="Immeuble Résidence Astou & Ndiaga" class="img-fluid rounded shadow mb-4" style="max-width: 600px;" />
         <a href="https://wa.me/221770000000" target="_blank" class="btn btn-success btn-lg mt-3">
           <i class="fab fa-whatsapp"></i> Réserver via WhatsApp
@@ -73,13 +39,7 @@
   </main>
 
   <!-- Footer -->
-  <footer class="footer-dark text-center py-4 mt-5 main-content">
-    <div class="container">
-      <p class="mb-1 text-gold">&copy; 2025 Résidence Astou & Ndiaga. Tous droits réservés.</p>
-      <p class="text-gold mb-0">Adresse : Route des Almadies, Dakar, Sénégal</p>
-      <p class="text-gold">Téléphone : +221 77 000 00 00 | Email : contact@residence-astou-ndiaga.sn</p>
-    </div>
-  </footer>
+  <?php include("includes/footer.php"); ?>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
@@ -88,7 +48,6 @@
     menuBtn.addEventListener('click', () => {
       sidebar.classList.toggle('active');
     });
-    // Optionnel : fermer la sidebar en cliquant en dehors
     document.addEventListener('click', function(e) {
       if (!sidebar.contains(e.target) && !menuBtn.contains(e.target)) {
         sidebar.classList.remove('active');

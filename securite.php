@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sécurité - Résidence Astou & Ndiaga</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <!-- Header avec menu -->
@@ -57,10 +57,7 @@
   </main>
 
   <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Résidence Astou & Ndiaga - Tous droits réservés</p>
-  </footer>
-
+  <?php include("includes/footer.php"); ?>
   <!-- JS inclus -->
   <script>
     const hamburger = document.getElementById('hamburger');

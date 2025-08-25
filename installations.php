@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nos Installations - Résidence Astou & Ndiaga</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="hero" style="background: #000;">
@@ -106,13 +106,8 @@
     </section>
   </main>
 
-  <footer class="footer-dark text-center py-4 mt-5">
-    <div class="container">
-      <p class="mb-1 text-gold">&copy; 2025 Résidence Astou & Ndiaga. Tous droits réservés.</p>
-      <p class="text-gold mb-0">Adresse : Route des Almadies, Dakar, Sénégal</p>
-      <p class="text-gold">Téléphone : +221 77 000 00 00 | Email : contact@residence-astou-ndiaga.sn</p>
-    </div>
-  </footer>
+  <!-- Footer -->
+  <?php include("includes/footer.php"); ?>
 
 </body>
 </html>
